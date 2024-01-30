@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="UserAppThemeTest.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:UserAppThemeTest"
+    Title="UserAppThemeTest">
+
+    <TabBar>
+        <ShellContent
+            Title="Home"
+            ContentTemplate="{DataTemplate local:MainPage}"
+            Route="MainPage">
+
+            <ShellContent.Icon>
+                <FontImageSource
+                    FontFamily="UIFontIcons"
+                    Glyph="{StaticResource Camera}"
+                    Color="{AppThemeBinding Dark=White,
+                                            Light=Black}" />
+            </ShellContent.Icon>
+
+        </ShellContent>
+
+        <ShellContent
+            Title="Test"
+            ContentTemplate="{DataTemplate local:MauiXaml1}">
+
+            <ShellContent.Icon>
+                <FontImageSource
+                    FontFamily="UIFontIcons"
+                    Glyph="{StaticResource Reminder}"
+                    Color="{AppThemeBinding Dark=White,
+                                            Light=Black}" />
+            </ShellContent.Icon>
+
+        </ShellContent>
+    </TabBar>
+
+</Shell>

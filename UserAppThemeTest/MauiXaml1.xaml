@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<ContentPage
+    x:Class="UserAppThemeTest.MauiXaml1"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+
+    <Image
+        HorizontalOptions="Center"
+        Source="dotnet_bot.png"
+        VerticalOptions="Center" />
+
+</ContentPage>
